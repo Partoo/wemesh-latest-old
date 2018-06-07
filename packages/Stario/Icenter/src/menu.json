@@ -1,0 +1,49 @@
+[
+  {
+    "name": "控制面板",
+    "icon": "dashboard",
+    "path": "/home",
+    "order": 0,
+    "component": "pages/Home",
+    "permissions": [
+      {
+        "name": "general",
+        "description": "进入后台的权限，内置不可更改"
+      }
+    ]
+  },
+  {
+    "name": "个人中心",
+    "icon": "vcard",
+    "path": "/account",
+    "order": 1,
+    "component": "pages/account/Home",
+    "permissions": [
+      {
+        "name": "general"
+      }
+    ],
+    "children": [
+      {
+        "name": "我的资料",
+        "path": "/account/profile",
+        "component": "pages/account/Profile",
+        "permissions": [
+          {
+            "name": "general"
+          }
+        ]
+      },
+      {
+        "name": "通知提醒",
+        "path": "/account/event",
+        "component": "pages/account/Event",
+        "permissions": [
+          {
+            "name": "general"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+{
+    "name": "公卫管理",
+    "icon": "heartbeat",
+    "path": "/health",
+    "component": "pages/health/Home",
+    "order": 2,
+    "permissions": [
+      {
+        "name": "health_manager",
+        "description": "管理公卫"
+      }
+    ],
+    "children": [
+    	{
+    		"name": "老年人管理",
+        "path": "/health/aged",
+        "component": "pages/health/Aged",
+        "permissions": [
+          {
+            "name": "health_aged_manager"
+          }
+        ]
+    	}
+    ]
+}

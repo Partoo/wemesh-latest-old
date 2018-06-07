@@ -1,0 +1,55 @@
+{
+    "name": "微网站管理",
+    "icon": "wechat",
+    "path": "/wesite",
+    "component": "pages/wesite/Home",
+    "order": 5,
+    "permissions": [
+      {
+        "name": "wesite_manager",
+        "description": "管理微网站"
+      }
+    ],
+    "children": [
+    	{
+    		"name": "分类管理",
+        "path": "/wesite/category",
+        "component": "pages/wesite/Category",
+        "permissions": [
+          {
+            "name": "wesite_manager"
+          }
+        ]
+    	},
+      {
+        "name": "文章管理",
+        "path": "/wesite/post",
+        "component": "pages/wesite/post",
+        "permissions": [
+          {
+            "name": "wesite_manager"
+          }
+        ]
+      },
+      {
+        "name": "页面管理",
+        "path": "/wesite/page",
+        "component": "pages/wesite/page",
+        "permissions": [
+          {
+            "name": "wesite_manager"
+          }
+        ]
+      },
+      {
+        "name": "菜单管理",
+        "path": "/wesite/menu",
+        "component": "pages/wesite/Menu",
+        "permissions": [
+          {
+            "name": "wesite_manager"
+          }
+        ]
+      }
+    ]
+}
